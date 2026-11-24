@@ -2,7 +2,7 @@ const fichas = [
 	{
 		id: "desc-001",
 		nombre: "Descubrimiento de la penicilina",
-		anio: 1928,
+		anio: "1928",
 		area: "Medicina",
 		tipo: "Descubrimiento",
 		descripcion:
@@ -16,7 +16,7 @@ const fichas = [
 	{
 		id: "desc-002",
 		nombre: "Descubrimiento de la estructura del ADN",
-		anio: 1953,
+		anio: "1953",
 		area: "Biología",
 		tipo: "Descubrimiento",
 		descripcion:
@@ -35,7 +35,7 @@ const fichas = [
 	{
 		id: "desc-003",
 		nombre: "Descubrimiento de la radiactividad natural",
-		anio: 1896,
+		anio: "1896",
 		area: "Física",
 		tipo: "Descubrimiento",
 		descripcion:
@@ -101,3 +101,32 @@ const hitos = [
 	},
 ];
 const preguntas = {};
+
+function renderFicha() {
+	const contenedor = document.querySelector(".--contenedor-fichas");
+
+	fichas.forEach(e => {
+		const ficha = document.createElement("DIV");
+		for (const [key, value] of Object.entries(e)) {
+			if (key !== "id") {
+				const p = document.createElement("P");
+				p.classList.add(key);
+				p.textContent = value;
+				ficha.appendChild(p);
+			}
+		}
+		contenedor.appendChild(ficha);
+	});
+
+	console.log(contenedor);
+}
+const hola = {
+	hola: 1,
+	hola3: 2,
+};
+
+function renderCientifico() {}
+
+function renderHito() {}
+
+export { renderFicha, renderCientifico, renderHito };

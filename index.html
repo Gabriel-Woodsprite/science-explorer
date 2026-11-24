@@ -1,150 +1,143 @@
 <!doctype html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SCIENCE EXPLORER — Ciencia e Inteligencia Artificial</title>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>SCIENCE EXPLORER — Ciencia e Inteligencia Artificial</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=JetBrains+Mono:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+			rel="stylesheet" />
 
-    <link rel="stylesheet" href="css/estilos.css" />
-  </head>
-  <body>
-    <header class="site-header">
-      <div class="header-contenedor">
-        <a href="#inicio" class="logo-marca">
-          <h1>SCIENCE EXPLORER</h1>
-        </a>
+		<link rel="stylesheet" href="css/estilos.css" />
+	</head>
+	<body>
+		<header class="site-header">
+			<div class="header-contenedor">
+				<a href="#inicio" class="logo-marca">
+					<h1>SCIENCE EXPLORER</h1>
+				</a>
 
-        <input
-          type="checkbox"
-          id="menu-toggle"
-          class="menu-checkbox"
-          aria-hidden="true"
-        />
-        <label
-          for="menu-toggle"
-          class="menu-boton"
-          aria-label="Abrir o cerrar menú de navegación"
-        >
-          <span class="linea"></span>
-          <span class="linea"></span>
-          <span class="linea"></span>
-        </label>
+				<input
+					type="checkbox"
+					id="menu-toggle"
+					class="menu-checkbox"
+					aria-hidden="true" />
+				<label
+					for="menu-toggle"
+					class="menu-boton"
+					aria-label="Abrir o cerrar menú de navegación">
+					<span class="linea"></span>
+					<span class="linea"></span>
+					<span class="linea"></span>
+				</label>
 
-        <nav class="nav-principal" aria-label="Navegación principal">
-          <ul>
-            <li><a href="#inicio">01. Inicio</a></li>
-            <li><a href="#descubrimientos">02. Descubrimientos</a></li>
-            <li><a href="#cientificos">03. Científicos</a></li>
-            <li><a href="#laboratorio">04. Laboratorio</a></li>
-            <li><a href="#cronologia">05. Cronología</a></li>
-            <li><a href="#desafio">06. Desafío</a></li>
-            <li><a href="#bitacora" class="nav-destacado">Mi bitácora</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+				<nav class="nav-principal" aria-label="Navegación principal">
+					<ul>
+						<li><a href="#inicio">01. Inicio</a></li>
+						<li><a href="#descubrimientos">02. Descubrimientos</a></li>
+						<li><a href="#cientificos">03. Científicos</a></li>
+						<li><a href="#laboratorio">04. Laboratorio</a></li>
+						<li><a href="#cronologia">05. Cronología</a></li>
+						<li><a href="#desafio">06. Desafío</a></li>
+						<li><a href="#bitacora" class="nav-destacado">Mi bitácora</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
 
-    <main>
-      <!-- 1. Presentación y accesos -->
-      <section
-        id="inicio"
-        class="seccion-bloque"
-        aria-labelledby="titulo-inicio"
-      >
-        <div class="contenedor">
-          <span class="etiqueta-modulo">01 — Praesentatio</span>
-          <h2 id="titulo-inicio">Inicio</h2>
-        </div>
-      </section>
+		<main>
+			<!-- 1. Presentación y accesos -->
+			<section
+				id="inicio"
+				class="seccion-bloque"
+				aria-labelledby="titulo-inicio">
+				<div class="contenedor">
+					<span class="etiqueta-modulo">01 — Praesentatio</span>
+					<h2 id="titulo-inicio">Inicio</h2>
+				</div>
+			</section>
 
-      <!-- 2. Consultar y filtrar 30 fichas -->
-      <section
-        id="descubrimientos"
-        class="seccion-bloque"
-        aria-labelledby="titulo-descubrimientos"
-      >
-        <div class="contenedor">
-          <span class="etiqueta-modulo">02 — Archivum</span>
-          <h2 id="titulo-descubrimientos">Biblioteca de descubrimientos</h2>
-        </div>
-      </section>
+			<!-- 2. Consultar y filtrar 30 fichas -->
+			<section
+				id="descubrimientos"
+				class="seccion-bloque"
+				aria-labelledby="titulo-descubrimientos">
+				<div class="contenedor">
+					<span class="etiqueta-modulo">02 — Archivum</span>
+					<h2 id="titulo-descubrimientos">Biblioteca de descubrimientos</h2>
+					<div class="--contenedor-fichas"></div>
+				</div>
+			</section>
 
-      <!-- 3. Biografías y contribuciones -->
-      <section
-        id="cientificos"
-        class="seccion-bloque"
-        aria-labelledby="titulo-cientificos"
-      >
-        <div class="contenedor">
-          <span class="etiqueta-modulo">03 — Biographiae</span>
-          <h2 id="titulo-cientificos">Grandes científicos</h2>
-        </div>
-      </section>
+			<!-- 3. Biografías y contribuciones -->
+			<section
+				id="cientificos"
+				class="seccion-bloque"
+				aria-labelledby="titulo-cientificos">
+				<div class="contenedor">
+					<span class="etiqueta-modulo">03 — Biographiae</span>
+					<h2 id="titulo-cientificos">Grandes científicos</h2>
+					<div class="--contenedor-cientificos"></div>
+				</div>
+			</section>
 
-      <!-- 4. Tres simulaciones educativas -->
-      <section
-        id="laboratorio"
-        class="seccion-bloque"
-        aria-labelledby="titulo-laboratorio"
-      >
-        <div class="contenedor">
-          <span class="etiqueta-modulo">04 — Simulationes</span>
-          <h2 id="titulo-laboratorio">Laboratorio interactivo</h2>
-        </div>
-      </section>
+			<!-- 4. Tres simulaciones educativas -->
+			<section
+				id="laboratorio"
+				class="seccion-bloque"
+				aria-labelledby="titulo-laboratorio">
+				<div class="contenedor">
+					<span class="etiqueta-modulo">04 — Simulationes</span>
+					<h2 id="titulo-laboratorio">Laboratorio interactivo</h2>
+				</div>
+			</section>
 
-      <!-- 5. Explorar hitos por fecha -->
-      <section
-        id="cronologia"
-        class="seccion-bloque"
-        aria-labelledby="titulo-cronologia"
-      >
-        <div class="contenedor">
-          <span class="etiqueta-modulo">05 — Monumenta</span>
-          <h2 id="titulo-cronologia">Línea del tiempo</h2>
-        </div>
-      </section>
+			<!-- 5. Explorar hitos por fecha -->
+			<section
+				id="cronologia"
+				class="seccion-bloque"
+				aria-labelledby="titulo-cronologia">
+				<div class="contenedor">
+					<span class="etiqueta-modulo">05 — Monumenta</span>
+					<h2 id="titulo-cronologia">Línea del tiempo</h2>
+				</div>
+			</section>
 
-      <!-- 6. Cuestionario con calificación -->
-      <section
-        id="desafio"
-        class="seccion-bloque"
-        aria-labelledby="titulo-desafio"
-      >
-        <div class="contenedor">
-          <span class="etiqueta-modulo">06 — Quaestio</span>
-          <h2 id="titulo-desafio">Desafío científico</h2>
-        </div>
-      </section>
+			<!-- 6. Cuestionario con calificación -->
+			<section
+				id="desafio"
+				class="seccion-bloque"
+				aria-labelledby="titulo-desafio">
+				<div class="contenedor">
+					<span class="etiqueta-modulo">06 — Quaestio</span>
+					<h2 id="titulo-desafio">Desafío científico</h2>
+				</div>
+			</section>
 
-      <!-- 7. Favoritos y notas -->
-      <section
-        id="bitacora"
-        class="seccion-bloque"
-        aria-labelledby="titulo-bitacora"
-      >
-        <div class="contenedor">
-          <span class="etiqueta-modulo">07 — Commentarii</span>
-          <h2 id="titulo-bitacora">Mi bitácora científica</h2>
-        </div>
-      </section>
-    </main>
+			<!-- 7. Favoritos y notas -->
+			<section
+				id="bitacora"
+				class="seccion-bloque"
+				aria-labelledby="titulo-bitacora">
+				<div class="contenedor">
+					<span class="etiqueta-modulo">07 — Commentarii</span>
+					<h2 id="titulo-bitacora">Mi bitácora científica</h2>
+				</div>
+			</section>
+		</main>
 
-    <footer class="site-footer">
-      <div class="contenedor footer-contenido">
-        <p>
-          Aplicación web educativa sobre ciencia, computación e inteligencia
-          artificial.
-        </p>
-        <span class="footer-estado">Ciencia · Computación · IA</span>
-      </div>
-    </footer>
-  </body>
+		<footer class="site-footer">
+			<div class="contenedor footer-contenido">
+				<p>
+					Aplicación web educativa sobre ciencia, computación e inteligencia
+					artificial.
+				</p>
+				<span class="footer-estado">Ciencia · Computación · IA</span>
+			</div>
+		</footer>
+		<script type="module" src="js/app.js"></script>
+	</body>
 </html>
